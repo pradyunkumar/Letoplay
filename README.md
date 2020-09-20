@@ -42,6 +42,25 @@ $ python3 model.py
 
 Expented Result:
 
+```
+              precision    recall  f1-score   support
+
+     0.0_1.5       0.77      0.42      0.55        40
+     1.5_3.0       0.80      1.00      0.89        40
+   12.0_13.5       0.00      0.00      0.00         0
+     3.0_4.5       0.84      0.93      0.88        40
+     4.5_6.0       0.58      0.90      0.71        40
+     6.0_7.5       0.91      1.00      0.95        40
+     7.5_9.0       1.00      0.78      0.87        40
+    9.0_10.5       1.00      0.65      0.79        40
+
+    accuracy                           0.81       280
+   macro avg       0.74      0.71      0.70       280
+weighted avg       0.84      0.81      0.81       280
+
+Accuracy Score:  0.8107142857142857
+```
+
 ### Development
 
-Want to contribute? Great! Email me at pradyunkumar03@gmail.com
+Want to contribute or ask questions? Great! Email me at pradyunkumar03@gmail.com.
