@@ -5,7 +5,7 @@ from time import sleep
 
 SAMPLE_RATE = 44100
 CHANNELS = 1
-MIC_ID = 6
+MIC_ID = 6  # Device ID of Mic used
 
 sd.default.device = 6
 
@@ -18,7 +18,7 @@ sleep(1)
 print('Recording...')
 myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=1)
 sd.wait()  # Wait until recording is finished
-write(f'/home/pradyun/Documents/py/Musicy/test/{fname}', fs, myrecording)  # Save as WAV file
+write(f'test/{fname}', fs, myrecording)  # Save as WAV file
 print('Done Recording\n')
 
 
