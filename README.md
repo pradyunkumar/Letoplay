@@ -1,5 +1,5 @@
 # Description
-Have you ever wanted to check the precise accuracy of your music ractice based on professional samples? Letoplay is a music accuracy program that gauges the correctness of your music based on training samples based on tempo and tune. Here are some features of the program:
+Have you ever wanted to check the precise accuracy of your music practice based on professional samples? Before creating this program, I wanted to relearn how to play the piano but I was unsure of how correct my practice was. Letoplay is a music accuracy program that gauges the correctness of your music based on training samples based on tempo and tune. Here are some features of the program:
 
 1. Percent Accuracy of Music
 2. Training on which parts of the song need improvement (currently in development)
