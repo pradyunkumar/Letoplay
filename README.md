@@ -6,7 +6,7 @@ Have you ever wanted to check the precise accuracy of your music practice based 
 3. Easy to use UI (currently in development)
 
 
-# How it Works
+### How it Works
 
 Letoplay works through a data collected by Dejavu audiofingerprinting. Check out [dejavu documentation](https://github.com/worldveil/dejavu). The song is then broken off into time sections based on the bpm, which are used as targets for the data. To create data, a random sequence of fingerprints are chosen and given a label of the time section. The fingerprints are then called run through word2vec to create an numeric data. This data is then trained through a linear SVC kernel and tested with the test data to determine accuracy. 
 
@@ -14,7 +14,9 @@ NOTE: The features described below are still under development.
 The specific training will be created based on tracking the fingerprints at specific times. The UI is developed through flask.
 
 
-# Installation
+# Using the Library
+
+### Installation
 NOTE: pip install is in progress of being set up. For now just git clone this documentation. Follow installation instructions from [Dejavu](https://github.com/worldveil/dejavu).
 
 ```sh
@@ -22,7 +24,7 @@ $ pip install -r requirements.txt
 ```
 ### Running the Program
 
-All Audio must be in .wav format. Place training files in the training folder and test files in the test folder. Delete any non-wav files from all train, test, and data. Run model.py to check the accuracy score.
+All Audio must be in .wav format. Place training files in the training folder and test files in the test folder. Delete any non-wav files from all train and test. The data folder must remain empty. Run model.py to check the accuracy score.
 
 Using test.py, you can record your audio directly to a wav file which will be added to the test directory.
 
@@ -61,6 +63,6 @@ weighted avg       0.84      0.81      0.81       280
 Accuracy Score:  0.8107142857142857
 ```
 
-### Development
+# Development
 
 Want to contribute or ask questions? Great! Email me at pradyunkumar03@gmail.com.
